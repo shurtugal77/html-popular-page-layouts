@@ -1,0 +1,52 @@
+/* The Great Reset */
+/* Whatever HTML page imports this file, the first thing that will happen is that all elements will "inherit" the properties set in here */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: lightskyblue;
+    height: 100%;
+    /* inherits body height of 1000px */
+}
+
+.header {
+    background-color: lightgreen;
+    height: 100px;
+}
+
+.content {
+    background-color: lightcoral;
+    height: calc(100% - 200px);
+    /* inherits container height of 100% --> 1000px */
+}
+
+.footer {
+    background-color: lightgoldenrodyellow;
+    height: 100px;
+}
+
+.button {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: grey;
+}
+
+.box{
+    margin: 10px;
+    padding: 20px;
+    border: solid 5px darkgreen;
+    background-color: purple;
+    width: 300px;
+    height: 200px;
+    box-sizing: border-box;
+    /* border-box sets the element to be exactly widht x height when taking into consideration padding and border (but NOT margin) */
+
+    /* box-sizing: content-box sets the internal content space available to be the width and height as set. Padding, margin and border will then be additional space on the page. */
+}
+
+.box-content {
+    background-color: darkred;
+}
