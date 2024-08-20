@@ -1,0 +1,38 @@
+.container {
+    display: grid;
+    grid-template: 
+    "header         header      header"
+    "left-menu      main        right-menu"
+    "footer         footer      footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: lightcoral;
+    height: 100px;
+}
+
+.left-menu {
+    grid-area: left-menu;
+    background-color: lightskyblue;
+    height: 300px;
+}
+
+.right-menu {
+    grid-area: right-menu;
+    background-color: lightgreen;
+    height: 300px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: lightpink;
+    height: 100px;
+}
+
+.main {
+    grid-area: main;
+    background-color: lightseagreen;
+    height: 300px;
+}
+
