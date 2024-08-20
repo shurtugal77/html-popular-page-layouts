@@ -1,6 +1,6 @@
 /* The Great Reset */
 /* Whatever HTML page imports this file, the first thing that will happen is that all elements will "inherit" the properties set in here */
-* {
+body {
     margin: 0;
     padding: 0;
 }
@@ -24,7 +24,7 @@
 
 .footer {
     background-color: lightgoldenrodyellow;
-    height: 100px;
+    height: 300px;
 }
 
 .button {
@@ -49,4 +49,12 @@
 
 .box-content {
     background-color: darkred;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer > ul > li {
+    font-weight: bold;
 }
