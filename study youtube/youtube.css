@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    height: 100vh; 
+    /* Modern approach: https://stackoverflow.com/questions/7049875/why-doesnt-height-100-work-to-expand-divs-to-the-screen-height */
+}
+
+/* Grid 1 */
+.container {
+    display: grid;
+    grid-template:
+    "left-menu  top-menu" 100px
+    "left-menu  main" 1fr /
+    200px       1fr;
+    background-color: lightcoral;
+    border: solid 2px red;
+    height: 100%;
+}
+
+.left-menu {
+    grid-area: left-menu;
+    background-color: lightblue;
+}
+
+.top-menu {
+    grid-area: top-menu;
+    background-color: lightgreen;
+}
+
+.main {
+    display: grid;
+    grid-area: main;
+    background-color: lightyellow;
+    grid-template:
+    "popular"   1fr
+    "shorts"    1fr
+    "trending"  1fr /
+    1fr;
+}
+
+.popular {
+    display: grid;
+    grid-area: popular;
+    background-color: rgb(40, 34, 129);
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* grid-template:
+    "video video video video video"
+    "video video video video video"; 
+    too repetetive */
+}
+
+.shorts {
+    grid-area: shorts;
+    background-color: rgb(85, 17, 141);
+}
+
+.trending {
+    grid-area: trending;
+    background-color: rgba(153, 41, 41, 0.562);
+}
