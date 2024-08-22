@@ -5,7 +5,10 @@
     "sub-header     sub-header  sub-header"     50px
     "left-menu      main        right-menu"     1fr
     "footer         footer      footer"         100px /
-    300px           1fr       200px;        
+    300px           1fr       200px;
+    /* gap: 10px; */
+    /* row-gap: 10px; */
+    /* column-gap: 10px; */
 }
 
 .header {
