@@ -10,15 +10,49 @@ body {
     grid-template:
     "left-menu  top-menu" 100px
     "left-menu  main" 1fr /
-    200px       1fr;
+    300px       1fr;
     background-color: lightcoral;
     border: solid 2px red;
     height: 100%;
 }
 
+/* Make the left-menu smaller */
+@media screen and (max-width: 600px) {
+    .container {
+        grid-template:
+        "left-menu top-menu" 100px
+        "left-menu main" 1fr /
+        150px       1fr;
+        gap: 10px
+    }
+}
+
+/* Make the left-menu disappear */
+@media screen and (max-width: 300px) {
+    .container {
+        grid-template:
+        "top-menu" 100px
+        "main" 1fr /
+        1fr;
+        gap: 10px
+    }
+    .left-menu{
+        display: none;
+    }
+}
+
+
 .left-menu {
     grid-area: left-menu;
     background-color: lightblue;
+}
+
+/* For screens/windows that are between 0 and 600 px */
+/* Make the left-menu purple */
+@media screen and (max-width: 600px) {
+    .left-menu {
+        background-color: mediumpurple;
+    }
 }
 
 .top-menu {
@@ -31,7 +65,7 @@ body {
     grid-area: main;
     background-color: lightyellow;
     grid-template:
-    "popular"   1fr
+    "popular"   2fr
     "shorts"    1fr
     "trending"  1fr /
     1fr;
@@ -43,10 +77,16 @@ body {
     background-color: rgb(40, 34, 129);
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    padding: 10px
     /* grid-template:
     "video video video video video"
     "video video video video video"; 
     too repetetive */
+}
+
+.popular > div {
+    background-color: darkolivegreen;
 }
 
 .shorts {
@@ -58,3 +98,4 @@ body {
     grid-area: trending;
     background-color: rgba(153, 41, 41, 0.562);
 }
+
