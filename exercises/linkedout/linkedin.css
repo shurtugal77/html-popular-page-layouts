@@ -33,6 +33,29 @@ body {
 }
 
 .main {
+    display: grid;
     grid-area: main;
     background-color: lightsteelblue;
+    grid-template:
+    "info"          2fr      
+    "create-post"   1fr    
+    "feed"          2fr/
+    1fr;
+    gap: 10px;
+}
+
+.info {
+    grid-area: info;
+    background-color: darkcyan;
+}
+
+.create-post {
+    grid-area: create-post;
+    background-color: darkmagenta;
+}
+
+.feed {
+    grid-area: feed;
+    background-color: darkred;
+    
 }
