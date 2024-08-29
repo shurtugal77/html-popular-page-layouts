@@ -21,9 +21,18 @@ body {
 }
 
 .left-menu {
+    display: grid;
     grid-area: left-menu;
     background-color: lightgreen;
     margin-left: 50px;
+    grid-template-rows: 1fr .5fr;
+    gap: 10px
+}
+
+.left-menu > div {
+    background-color: rgba(96, 173, 236, 0.801);
+    border: solid 1px red;
+    border-radius: 20px;
 }
 
 .right-menu {
