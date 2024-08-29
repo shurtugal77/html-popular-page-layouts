@@ -16,9 +16,13 @@ body {
 }
 
 .top-menu {
+    display: grid;
     grid-area: top-menu;
     background-color: lightskyblue;
+    grid-template-columns: 1fr 1fr 1fr;
 }
+
+
 
 .left-menu {
     display: grid;
