@@ -72,15 +72,18 @@ body {
 .info {
     grid-area: info;
     background-color: darkcyan;
+    border-radius: 20px;
 }
 
 .create-post {
     grid-area: create-post;
     background-color: darkmagenta;
+    border-radius: 20px;
 }
 
 .feed {
     grid-area: feed;
     background-color: darkred;
     margin-top: 20px;
+    border-radius: 20px;
 }
