@@ -19,10 +19,13 @@ body {
     display: grid;
     grid-area: top-menu;
     background-color: lightskyblue;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr .8fr;
 }
 
-
+.top-menu > div {
+    background-color: rgb(174, 189, 47);
+    border: dotted 1px blue;
+}
 
 .left-menu {
     display: grid;
@@ -35,7 +38,7 @@ body {
 
 .left-menu > div {
     background-color: rgba(96, 173, 236, 0.801);
-    border: solid 1px red;
+    border: dotted 1px red;
     border-radius: 20px;
 }
 
