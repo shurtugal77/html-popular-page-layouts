@@ -23,3 +23,8 @@ body {
     grid-area: left-menu;
     background-color: lightgreen;
 }
+
+.right-menu {
+    grid-area: right-menu;
+    background-color: lightcoral;
+}
