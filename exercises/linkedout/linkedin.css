@@ -32,7 +32,7 @@ body {
     grid-area: left-menu;
     background-color: lightgreen;
     margin-left: 50px;
-    grid-template-rows: 1fr .5fr;
+    grid-template-rows: 300px 125px;
     gap: 10px
 }
 
@@ -47,7 +47,7 @@ body {
     grid-area: right-menu;
     background-color: lightcoral;
     margin-right: 50px;
-    grid-template-rows: 1fr .3fr;
+    grid-template-rows: 300px 100px;
     gap: 10px;
 }
 
