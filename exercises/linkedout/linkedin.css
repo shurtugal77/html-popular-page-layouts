@@ -43,9 +43,18 @@ body {
 }
 
 .right-menu {
+    display: grid;
     grid-area: right-menu;
     background-color: lightcoral;
     margin-right: 50px;
+    grid-template-rows: 1fr .3fr;
+    gap: 10px;
+}
+
+.right-menu > div {
+    background-color: rgb(223, 174, 15);
+    border: dotted 1px green;
+    border-radius: 20px;
 }
 
 .main {
