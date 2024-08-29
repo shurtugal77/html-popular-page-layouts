@@ -57,5 +57,5 @@ body {
 .feed {
     grid-area: feed;
     background-color: darkred;
-    
+    margin-top: 20px;
 }
