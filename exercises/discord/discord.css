@@ -1,4 +1,4 @@
-.body {
+body {
     margin: 0;
     height: 100vh;
 }
@@ -12,4 +12,29 @@
     60px            120px           1fr;
     background-color: beige;
     height: 100%;
+}
+
+.left-menu {
+    grid-area: left-menu;
+    background-color: darkkhaki;
+}
+
+.server-menu {
+    grid-area: server-menu;
+    background-color: darkgoldenrod;
+}
+
+.top-menu {
+    grid-area: top-menu;
+    background-color: darkcyan;
+}
+
+.chat {
+    grid-area: chat;
+    background-color: greenyellow;
+}
+
+.message {
+    grid-area: message;
+    background-color: darkorchid;
 }
