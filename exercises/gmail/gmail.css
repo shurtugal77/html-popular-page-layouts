@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template: 
+    "logo       search      account"    60px
+    "folders    mail        right-menu" 1fr /
+    .3fr        1fr         .3fr;
+    background-color: rgb(189, 189, 224);
+    height: 100%;
+}
+
+.logo {
+    grid-area: logo;
+    background-color: firebrick;
+}
+
+.search {
+    grid-area: search;
+    background-color: hotpink;
+}
+
+.account {
+    grid-area: account;
+    background-color: bisque;
+}
+
+.folders {
+    grid-area: folders;
+    background-color: dodgerblue;
+}
+
+.mail{
+    grid-area: mail;
+    background-color: darkslategrey;
+}
+
+.right-menu {
+    display: grid;
+    grid-area: right-menu;
+    background-color: orange;
+    grid-template:
+    "settings   apps" 1fr /
+    .8fr        .2fr;
+}
+
+.settings {
+    grid-area: settings;
+    background-color: brown;
+}
+
+.apps {
+    grid-area: apps;
+    background-color: lawngreen;
+}
+
