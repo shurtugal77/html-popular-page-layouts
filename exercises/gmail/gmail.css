@@ -76,13 +76,20 @@ https://stackoverflow.com/questions/14963393/my-body-background-color-disappears
 .sub-folders {
     display: grid;
     grid-area: sub-folders;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: fit-content(100%);;
 }
 
 .mail{
+    display: grid;
     grid-area: mail;
     background-color: rgb(28, 160, 160);
-    border-radius: 20px;
+    /* grid-template-rows: max-content 1fr auto; */
+    grid-template-rows: fit-content(100%);
+}
+
+.mail > p {
+    border-bottom: 1px dotted black;
+    margin: 10px 0 10px 0;
 }
 
 .right-menu {
