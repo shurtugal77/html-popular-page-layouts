@@ -40,6 +40,12 @@ body {
     1fr;
 }
 
+@media screen and (max-width: 1000px) {
+    .server-menu{
+        display: none;
+    }
+}
+
 .info {
     grid-area: info;
     background-color: lightcoral;
