@@ -14,6 +14,16 @@ body {
     height: 100%;
 }
 
+@media screen and (max-width: 1000px) {
+    .container{
+        grid-template:
+        "left-menu      top-menu"  .1fr
+        "left-menu      chat"       1fr
+        "left-menu      message"   .1fr /
+        .05fr           1fr; ;
+    }
+}
+
 .left-menu {
     grid-area: left-menu;
     background-color: darkkhaki;
