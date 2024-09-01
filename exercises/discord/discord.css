@@ -3,3 +3,13 @@
     height: 100vh;
 }
 
+.container {
+    display: grid;
+    grid-template:
+    "left-menu      server-menu     top-menu"   1fr
+    "left-menu      server-menu     chat"       1fr
+    "left-menu      server-menu     message"    1fr /
+    60px            120px           1fr;
+    background-color: beige;
+    height: 100%;
+}
