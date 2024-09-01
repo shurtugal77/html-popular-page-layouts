@@ -20,8 +20,35 @@ body {
 }
 
 .server-menu {
+    display: grid;
     grid-area: server-menu;
     background-color: darkgoldenrod;
+    grid-template:
+    "info"          .1fr
+    "invite"        .3fr
+    "channel-menu"  1fr/
+    1fr;
+}
+
+.info {
+    grid-area: info;
+    background-color: lightcoral;
+}
+
+.invite {
+    grid-area: invite;
+    background-color: forestgreen;
+}
+
+.channel-menu {
+    display: grid;
+    grid-area: channel-menu;
+    background-color: deeppink;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.channel-menu > div {
+    background-color: rgb(211, 47, 47);
 }
 
 .top-menu {
