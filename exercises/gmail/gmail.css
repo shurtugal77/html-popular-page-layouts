@@ -113,6 +113,15 @@ https://stackoverflow.com/questions/14963393/my-body-background-color-disappears
     border-radius: 20px;
 }
 
+.settings > p:nth-of-type(2){
+    width: 150px;
+    text-align: center;
+    border: 1px solid grey;
+    margin: 1px 10px 1px 10px;
+    background-color: lightgray;
+    box-shadow: 0px 1px 3px darkgray;
+}
+
 .apps {
     grid-area: apps;
     background-color: lawngreen;
