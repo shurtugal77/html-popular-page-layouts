@@ -11,6 +11,16 @@ body {
     .3fr        1fr         .3fr;
     background-color: rgb(189, 189, 224);
     height: 100%;
+    gap: 10px
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        grid-template:
+        "logo       search"   60px
+        "folders    mail"   1fr/
+        .3fr        1fr;
+    }
 }
 
 .logo {
@@ -21,11 +31,23 @@ body {
 .search {
     grid-area: search;
     background-color: hotpink;
+    border-radius: 20px;
 }
 
+@media screen and (max-width: 600px) {
+    .search{
+        display: none;
+    }
+}
 .account {
     grid-area: account;
     background-color: bisque;
+}
+
+@media screen and (max-width: 1000px) {
+    .account {
+        display: none;
+    }
 }
 
 .folders {
@@ -36,6 +58,7 @@ body {
 .mail{
     grid-area: mail;
     background-color: darkslategrey;
+    border-radius: 20px;
 }
 
 .right-menu {
@@ -47,13 +70,21 @@ body {
     .8fr        .2fr;
 }
 
+@media screen and (max-width: 1000px) {
+    .right-menu{
+        display: none;
+    }
+}
+
 .settings {
     grid-area: settings;
     background-color: brown;
+    border-radius: 20px;
 }
 
 .apps {
     grid-area: apps;
     background-color: lawngreen;
+    border-radius: 20px;
 }
 
