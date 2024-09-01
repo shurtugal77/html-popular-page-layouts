@@ -15,6 +15,25 @@ body {
     gap: 30px
 }
 
+/* Make right-menu disappear */
+@media screen and (max-width: 1000px) {
+    .container {
+        grid-template:
+        "top-menu   top-menu"   60px
+        "left-menu  main    "   1fr /
+        300px       1fr;       
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container{
+        grid-template:
+        "top-menu" 60px
+        "main"     1fr /
+        1fr;
+    }
+}
+
 .top-menu {
     display: grid;
     grid-area: top-menu;
@@ -42,6 +61,15 @@ body {
     border-radius: 20px;
 }
 
+@media screen and (max-width: 700px) {
+    .left-menu{
+        display: none;
+    }
+    .left-menu > div {
+        display: none;
+    }
+}
+
 .right-menu {
     display: grid;
     grid-area: right-menu;
@@ -50,6 +78,16 @@ body {
     grid-template-rows: 300px 100px;
     gap: 10px;
 }
+
+@media screen and (max-width: 1000px) {
+    .right-menu {
+        display: none;
+    }
+    .right-menu > div {
+        display: none;
+    }
+}
+
 
 .right-menu > div {
     background-color: rgb(223, 174, 15);
@@ -67,6 +105,18 @@ body {
     "feed"          2fr/
     1fr;
     gap: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .main{
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main{
+        margin-left: 50px;
+    }
 }
 
 .info {
