@@ -51,13 +51,34 @@ body {
 }
 
 .folders {
+    display: grid;
     grid-area: folders;
     background-color: dodgerblue;
+    grid-template:
+    "compose"       .1fr
+    "sub-folders"   1fr/
+    1fr;
+}
+
+.compose {
+    grid-area: compose;
+    width: 80px;
+    border: solid 1px gray;
+    background-color: lightgrey;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0px 1px 3px darkgray;
+}
+
+.sub-folders {
+    display: grid;
+    grid-area: sub-folders;
+    grid-template-rows: auto 1fr auto;
 }
 
 .mail{
     grid-area: mail;
-    background-color: darkslategrey;
+    background-color: rgb(28, 160, 160);
     border-radius: 20px;
 }
 
